@@ -78,3 +78,5 @@ class Snake:
             
         return False
     
+    def reset(self):
+        self.create_snake()
