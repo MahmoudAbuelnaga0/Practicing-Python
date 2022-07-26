@@ -56,7 +56,7 @@ def play_game():
         ball.bounce_off_wall()
     
     # Check if the ball hit paddles
-    if (ball.hit_left_paddle(left_paddle)):
+    if (ball.hit_paddle(left_paddle)):
         if (ball.first_time_hit_paddle):
             if (ball.speed_x < 0):
                 update_speed_x = -MAX_SPEED_X
@@ -72,7 +72,7 @@ def play_game():
             ball.first_time_hit_paddle = False
             
         ball.rebound_off_paddle(left_paddle)         
-    elif (ball.hit_right_paddle(right_paddle)):
+    elif (ball.hit_paddle(right_paddle)):
         if (ball.first_time_hit_paddle):
             if (ball.speed_x < 0):
                 update_speed_x = -MAX_SPEED_X
