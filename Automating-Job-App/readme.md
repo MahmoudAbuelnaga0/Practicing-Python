@@ -1,4 +1,4 @@
-# Automating Job Applying
+# Automated Job Applying
 
 A program that apply, check or save easy-applying jobs on linkedin that don't require additional information (only your resume).
 
