@@ -18,7 +18,7 @@ The program searches for appartments you can rent in San Francisco, CA on "https
 - Selenium scraping "https://www.zillow.com/"
   - https://user-images.githubusercontent.com/87435660/185852839-0ab35225-42e1-4b1f-86f4-ed4567826312.mp4
 
-- Selenium Filling the form
+- Selenium filling the form
   - https://user-images.githubusercontent.com/87435660/185852893-fb43b9dc-ee9d-4378-81ff-8a68c0ecb63e.mp4
 
 - Filled form
