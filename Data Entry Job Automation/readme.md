@@ -16,10 +16,10 @@ The program searches for appartments you can rent in San Francisco, CA on "https
 ## Demo
 
 - Selenium scraping "https://www.zillow.com/"
-[](screenshots/video1.mp4)
+![](screenshots/video1.mp4)
 
 - Selenium Filling the form
-[](screenshots/video2.mp4)
+![](screenshots/video2.mp4)
 
 - Filled form
 ![filled form](./screenshots/2.png)
