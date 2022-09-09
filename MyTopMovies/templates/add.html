@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock %}
+
+{% block title %}Add Movie{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h1 class="heading">Add a Movie</h1>
+    <form action="{{ url_for('add') }}" method="post" novalidate>
+      {{ form.csrf_token }}
+      {% for field in form %}
+      <div class="mb-3">
+        {{ field.label(class_= "form-label", for= field.id) }}
+        {% if request_method == "GET" or not(field.errors) %}
+          {{ field(class_= "form-control") }}
+        {% else %}
+          {{ field(class_= "form-control is-invalid") }}
+        {% endif %}
+  
+        {% for error in field.errors %}
+        <div class="invalid-feedback">
+          {{ error }}
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+      <button type="submit" class="btn btn-primary">Add Movie</button>
+    </form>
+</div>
+{% endblock %}
